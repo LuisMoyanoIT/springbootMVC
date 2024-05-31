@@ -9,5 +9,7 @@
 
     <h1 th:text="${user.name}" ></h1>
     <h1 th:text="${user.lastName}" ></h1>
+    <h1 th:if="${user.email}" th:text="${user.email}" ></h1>
+    <h1 th:if="${not (user.email != null )}" th:text="${'No tiene email'}" ></h1>
 </body>
 </html>

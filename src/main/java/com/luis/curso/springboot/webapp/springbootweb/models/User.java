@@ -3,8 +3,16 @@ package com.luis.curso.springboot.webapp.springbootweb.models;
 public class User {
 
     private String name;
+    private String lastName;
+    private String email;
 
-    
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 
     public User(String name, String lastName) {
         this.name = name;
@@ -19,7 +27,7 @@ public class User {
         this.name = name;
     }
 
-    private String lastName;
+    
 
     public String getLastName() {
         return lastName;
